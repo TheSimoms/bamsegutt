@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+
+        <title>Bamsegutt</title>
+
+        <style>
+            body {
+                background-color: black;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            #image {
+                width: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="center">
+            <img id="image" src="./images/cool-face.png" alt="Bamsegutt" />
+        </div>
+
+        <script>
+            const numberOfImages = 3;
+
+            function getRandomImage() {
+                index = Math.floor(Math.random() * numberOfImages) + 1;
+
+                document.getElementById('image').src = `./images/${index}.png`;
+            }
+
+            getRandomImage();
+        </script>
+    </body>
+</html>
